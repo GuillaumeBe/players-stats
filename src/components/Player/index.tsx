@@ -1,4 +1,5 @@
 import { PlayerInterface, Sex } from "../../interfaces/players";
+import { gramsToKilograms, centimetersToMeters } from "../../utils/measures";
 import {
   Card,
   Flag,
@@ -35,8 +36,8 @@ export default function Player({
         </PlayerInfo>
         <Details>
           <li>Age: {age}</li>
-          <li>Weight: {weight / 1000} kg </li>
-          <li>Height: {height / 100} m</li>
+          <li>Weight: {gramsToKilograms(weight)} kg </li>
+          <li>Height: {centimetersToMeters(height)} m</li>
         </Details>
       </div>
       <PlayerImage src={playerPictureUrl} alt="Player" />
