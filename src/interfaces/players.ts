@@ -1,4 +1,8 @@
-export default interface Player {
+export interface PlayersInterface {
+  players: PlayerInterface[];
+}
+
+export interface PlayerInterface {
   id: string;
   firstname: string;
   lastname: string;
@@ -25,7 +29,7 @@ interface Stats {
   age: number;
 }
 
-enum Sex {
+export enum Sex {
   MAN = "MAN",
   WOMAN = "WOMAN",
 }

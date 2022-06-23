@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { ApolloClient, InMemoryCache, ApolloProvider } from "@apollo/client";
-import App from "./App";
+import { ThemeProvider } from "styled-components";
+
+import App from "./components/App";
+import GlobalStyles from "./components/GlobalStyles";
 import reportWebVitals from "./reportWebVitals";
 
 const client = new ApolloClient({
@@ -12,10 +15,22 @@ const client = new ApolloClient({
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
+
+const theme = {
+  color: {
+    primary: "#4b4a67",
+    secondary: "#ddd1c7",
+  },
+  borderRadius: "5px",
+};
+
 root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
-      <App />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <App />
+      </ThemeProvider>
     </ApolloProvider>
   </React.StrictMode>
 );
