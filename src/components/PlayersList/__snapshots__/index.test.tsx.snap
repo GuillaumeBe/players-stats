@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders error 1`] = `
+<div>
+  <div>
+    Error
+  </div>
+</div>
+`;
+
+exports[`renders loading 1`] = `
+<div>
+  <div>
+    Loading...
+  </div>
+</div>
+`;
+
+exports[`renders players list 1`] = `
+<div>
+  <div
+    class="sc-bczRLJ eyxgPe"
+  >
+    <div>
+      <div
+        class="sc-dkzDqf denMjn"
+      >
+        Rank: 
+        21
+      </div>
+      <div
+        class="sc-hKMtZM lbDXNu"
+      >
+        Points: 
+        1784
+      </div>
+      <div
+        class="sc-eCYdqJ fmJdUt"
+      >
+        Stan
+         
+        Wawrinka
+        ♂
+        <div
+          class="sc-gsnTZi hzCRrq"
+        >
+          <img
+            alt="SUI"
+            src="https://i.eurosport.com/_iss_/geo/country/flag/large/2213.png"
+          />
+        </div>
+      </div>
+      <ul
+        class="sc-gKXOVf MdrjT"
+      >
+        <li>
+          Age: 
+          33
+        </li>
+        <li>
+          Weight: 
+          81
+           kg 
+        </li>
+        <li>
+          Height: 
+          1.83
+           m
+        </li>
+      </ul>
+    </div>
+    <img
+      alt="Player"
+      class="sc-jSMfEi hdJsHV"
+      src="https://i.eurosport.com/_iss_/person/pp_clubteam/large/325225.jpg"
+    />
+  </div>
+</div>
+`;

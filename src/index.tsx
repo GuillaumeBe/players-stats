@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 
 import App from "./components/App";
 import GlobalStyles from "./components/GlobalStyles";
+import theme from "./theme";
 import reportWebVitals from "./reportWebVitals";
 
 const client = new ApolloClient({
@@ -15,14 +16,6 @@ const client = new ApolloClient({
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-
-const theme = {
-  color: {
-    primary: "#4b4a67",
-    secondary: "#ddd1c7",
-  },
-  borderRadius: "5px",
-};
 
 root.render(
   <React.StrictMode>

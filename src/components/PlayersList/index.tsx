@@ -5,9 +5,10 @@ import { PLAYERS } from "../../graphql/queries";
 import { PlayersInterface } from "../../interfaces/players";
 
 export default function PlayersList() {
-  const { loading, data } = useQuery<PlayersInterface>(PLAYERS);
+  const { loading, error, data } = useQuery<PlayersInterface>(PLAYERS);
 
   if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error</div>;
 
   const sortedPlayers =
     data &&
