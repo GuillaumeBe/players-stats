@@ -1,4 +1,4 @@
-import { centimetersToMeters, gramsToKilograms } from "./measures";
+import { centimetersToMeters, gramsToKilograms } from ".";
 
 test("converts centimeters to meters", () => {
   expect(centimetersToMeters(100)).toBe(1);

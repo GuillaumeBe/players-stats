@@ -1,5 +1,7 @@
-import { PlayerInterface, Sex } from "../../interfaces/players";
+import { PlayerInterface } from "../../interfaces/players";
 import { gramsToKilograms, centimetersToMeters } from "../../utils/measures";
+import { getSexIcon } from "../../utils/sex";
+
 import {
   Card,
   Flag,
@@ -29,7 +31,7 @@ export default function Player({
         <Points>Points: {points}</Points>
         <PlayerInfo>
           {firstname} {lastname}
-          {sex === Sex.MAN ? "♂" : Sex.WOMAN && "♀"}
+          {getSexIcon(sex)}
           <Flag>
             <img src={countryPictureUrl} alt={code} />
           </Flag>
